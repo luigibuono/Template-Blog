@@ -20,3 +20,5 @@ Nel json ci sono tutti i dati dei post
 
 
 Per il momento solo front end
+
+scss  e tailwind
