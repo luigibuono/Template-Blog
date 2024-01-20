@@ -1,0 +1,49 @@
+/* header.component.css */
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-static-top {
+  position: static;
+}
+
+
+
+
+
+
+/*
+.navbar-collapse {
+  max-height: 0;
+  overflow: hidden;
+  animation: slideDown 1.8s ease;
+}
+
+.navbar-collapse.show {
+  max-height: 500px;
+  animation: slideUp 1.8s ease;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 500px;
+  }
+  to {
+    max-height: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 500px;
+  }
+}
+*/
+
