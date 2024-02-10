@@ -413,13 +413,38 @@
 </div>
 
 
+<!--Sport-->
 
 
-<!--
-<div class="container mt-4">
+<div class="container mt-5 mb-5">
+    <nav class="navbar navbar-expand-lg ">
+          <div class="container">
+              <!-- Logo o voce a sinistra -->
+              <h2>Sport</h2>
+              
+              <!-- Voci di menu sulla destra -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Voce 1</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Voce 2</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Voce 3</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Voce 4</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <hr class="hr2">
 
   <div class="row mt-4">
-
+    <!-- Card principale -->
     <div class="col-md-6">
       <div class="card h-100">
         <img src="path-to-main-image.jpg" class="card-img-top" alt="Immagine principale">
@@ -432,11 +457,11 @@
         <p class="mb-0">Descrizione o contenuto di lato.</p>
     </div>
 
-
+    <!-- Tre card affiancate -->
     <div class="col-md-4">
 
       <div class="row mb-4">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card h-100">
             <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
           </div>
@@ -450,7 +475,7 @@
 
 
       <div class="row mb-4">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card h-100">
             <img src="path-to-image-2.jpg" class="card-img-top" alt="Immagine 2">
           </div>
@@ -464,7 +489,7 @@
 
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="card h-100">
             <img src="path-to-image-3.jpg" class="card-img-top" alt="Immagine 3">
           </div>
@@ -476,6 +501,385 @@
         </div>
       </div>
     </div>
+
+    <div class="container mt-4">
+      <!-- Terza sezione con card -->
+      <div class="row mt-4">
+      <!-- Tre card affiancate -->
+        <div class="col-md-3">
+    
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <h5>Titolo 1</h5>
+              <p class="mb-0">Descrizione o contenuto di lato.</p>
+            </div>
+          </div>
+    
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <h5>Titolo 1</h5>
+              <p class="mb-0">Descrizione o contenuto di lato.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <div class="card h-100">
+                <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <h5>Titolo 1</h5>
+              <p class="mb-0">Descrizione o contenuto di lato.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="row mb-4">
+            <div class="col-md-12">
+                <button>Tutte le notizie qui</button>
+            </div>
+          </div>
+        </div>
+  
   </div>
 </div>
--->
+
+
+<!--Video-->
+<div class="container mt-5">
+  <h2>Video</h2>
+  <hr>
+  <!-- Seconda sezione con sfondo blu -->
+  <div class="blue-background">
+    <!-- Container delle card -->
+    <div class="card-container" #cardContainer2>
+      <!-- Frecce di navigazione -->
+      <div class="nav-arrow left" (click)="scrollCards2('left')">&#8592;</div>
+      <div class="nav-arrow right" (click)="scrollCards2('right')">&#8594;</div>
+      
+      <!-- Container interno per le card -->
+      <div class="card-inner-container">
+        <!-- Card -->
+        <div class="card d-inline-block m-2" style="width: 18rem;" *ngFor="let card of cards2">
+          <img [src]="card.imageUrl" class="card-img-top" [alt]="card.alt">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.title }}</h5>
+            <p class="card-text">{{ card.description }}</p>
+            <p class="card-text2">{{ card.description }}</p>
+            <p class="card-text2">{{ card.description }}</p>
+            <p class="card-text2">{{ card.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--News Internazionali-->
+
+
+<div class="container mt-5 mb-5">
+  <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <!-- Logo o voce a sinistra -->
+            <h2>News internazionali</h2>
+            
+        </div>
+    </nav>
+    <hr class="hr2">
+
+<div class="row mt-4">
+  <!-- Card principale -->
+  <div class="col-md-6">
+    <div class="card h-100">
+      <img src="path-to-main-image.jpg" class="card-img-top" alt="Immagine principale">
+    </div>
+  </div>
+
+
+  <div class="col-md-2">
+      <h5>Titolo Principale</h5>
+      <p class="mb-0">Descrizione o contenuto di lato.</p>
+  </div>
+
+  <!-- Tre card affiancate -->
+  <div class="col-md-4">
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Titolo 1</h5>
+        <p class="mb-0">Descrizione o contenuto di lato.</p>
+      </div>
+    </div>
+
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="path-to-image-2.jpg" class="card-img-top" alt="Immagine 2">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Titolo 2</h5>
+        <p class="mb-0">Descrizione o contenuto di lato.</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <img src="path-to-image-3.jpg" class="card-img-top" alt="Immagine 3">
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Titolo 3</h5>
+        <p class="mb-0">Descrizione o contenuto di lato.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <!-- Terza sezione con card -->
+    <div class="row mt-4">
+    <!-- Tre card affiancate -->
+      <div class="col-md-3">
+  
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+            </div>
+          </div>
+  
+          <div class="col-md-6">
+            <h5>Titolo 1</h5>
+            <p class="mb-0">Descrizione o contenuto di lato.</p>
+          </div>
+        </div>
+  
+      </div>
+
+      <div class="col-md-3">
+
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+            </div>
+          </div>
+  
+          <div class="col-md-6">
+            <h5>Titolo 1</h5>
+            <p class="mb-0">Descrizione o contenuto di lato.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+            </div>
+          </div>
+  
+          <div class="col-md-6">
+            <h5>Titolo 1</h5>
+            <p class="mb-0">Descrizione o contenuto di lato.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+
+        <div class="row mb-4">
+          <div class="col-md-6">
+            <div class="card h-100">
+              <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+            </div>
+          </div>
+  
+          <div class="col-md-6">
+            <h5>Titolo 1</h5>
+            <p class="mb-0">Descrizione o contenuto di lato.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <!-- Terza sezione con card -->
+        <div class="row mt-4">
+        <!-- Tre card affiancate -->
+          <div class="col-md-3">
+      
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                </div>
+              </div>
+      
+              <div class="col-md-6">
+                <h5>Titolo 1</h5>
+                <p class="mb-0">Descrizione o contenuto di lato.</p>
+              </div>
+            </div>
+      
+          </div>
+    
+          <div class="col-md-3">
+    
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                </div>
+              </div>
+      
+              <div class="col-md-6">
+                <h5>Titolo 1</h5>
+                <p class="mb-0">Descrizione o contenuto di lato.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-3">
+    
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                </div>
+              </div>
+      
+              <div class="col-md-6">
+                <h5>Titolo 1</h5>
+                <p class="mb-0">Descrizione o contenuto di lato.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-3">
+    
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="card h-100">
+                  <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                </div>
+              </div>
+      
+              <div class="col-md-6">
+                <h5>Titolo 1</h5>
+                <p class="mb-0">Descrizione o contenuto di lato.</p>
+              </div>
+            </div>
+          </div>
+
+          <!--Aggiunta3-->
+
+
+          <div class="container mt-4">
+            <!-- Terza sezione con card -->
+            <div class="row mt-4">
+            <!-- Tre card affiancate -->
+              <div class="col-md-3">
+          
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                    </div>
+                  </div>
+          
+                  <div class="col-md-6">
+                    <h5>Titolo 1</h5>
+                    <p class="mb-0">Descrizione o contenuto di lato.</p>
+                  </div>
+                </div>
+          
+              </div>
+        
+              <div class="col-md-3">
+        
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                    </div>
+                  </div>
+          
+                  <div class="col-md-6">
+                    <h5>Titolo 1</h5>
+                    <p class="mb-0">Descrizione o contenuto di lato.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3">
+        
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                    </div>
+                  </div>
+          
+                  <div class="col-md-6">
+                    <h5>Titolo 1</h5>
+                    <p class="mb-0">Descrizione o contenuto di lato.</p>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="col-md-3">
+        
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <div class="card h-100">
+                      <img src="path-to-image-1.jpg" class="card-img-top" alt="Immagine 1">
+                    </div>
+                  </div>
+          
+                  <div class="col-md-6">
+                    <h5>Titolo 1</h5>
+                    <p class="mb-0">Descrizione o contenuto di lato.</p>
+                  </div>
+                </div>
+              </div>    
+</div>
+</div>
+
+
