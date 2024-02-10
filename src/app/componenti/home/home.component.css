@@ -45,4 +45,71 @@
   }
 
 
+  .blue-background {
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Stile per il container delle card */
+  .card-container {
+    white-space: nowrap;
+    padding-bottom: 30px; /* Spazio sotto per le frecce */
+    overflow-x: auto; /* Mostra la barra di scorrimento solo quando necessario */
+    overflow-y: hidden; /* Nasconde la barra di scorrimento verticale */
+  }
+
+  /* Barra di scorrimento personalizzata per Chrome */
+.card-container::-webkit-scrollbar {
+    width: 8px; /* Larghezza della barra di scorrimento */
+    height: 8px;
+  }
+  
+  .card-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Colore di sfondo della traccia della barra di scorrimento */
+  }
+  
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Colore del cursore della barra di scorrimento */
+    border-radius: 4px; /* Bordo arrotondato */
+  }
+  
+  /* Stile per le frecce */
+  .nav-arrow {
+    position: absolute;
+    bottom: 8px; /* Posiziona più in basso */
+    background-color: #007bff;
+    color: white;
+    padding: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+    font-size: 1rem;
+    border: 2px solid white;
+  }
+  
+  .nav-arrow.left {
+    left: 10px;
+  }
+
+  .nav-arrow.right {
+    right: 10px;
+  }
+
+  .card-text2{
+    visibility: hidden;
+  }
+
+  hr{
+    border: 2px solid #007bff;
+    color: #007bff;
+    width: 20%;
+  }
+ 
+
+
   
